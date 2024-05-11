@@ -89,9 +89,9 @@ namespace Project5 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea4 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^ legend4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->фToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->сохранитьДанныеТаблицыВФайлToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -193,7 +193,7 @@ namespace Project5 {
 					this->цветШрифтаЗаголовкаToolStripMenuItem
 			});
 			this->таблицаToolStripMenuItem->Name = L"таблицаToolStripMenuItem";
-			this->таблицаToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->таблицаToolStripMenuItem->Size = System::Drawing::Size(120, 22);
 			this->таблицаToolStripMenuItem->Text = L"Таблица";
 			// 
 			// цветТекстаToolStripMenuItem
@@ -245,7 +245,7 @@ namespace Project5 {
 					this->цветФонаГрафикаToolStripMenuItem
 			});
 			this->графикToolStripMenuItem->Name = L"графикToolStripMenuItem";
-			this->графикToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->графикToolStripMenuItem->Size = System::Drawing::Size(120, 22);
 			this->графикToolStripMenuItem->Text = L"График";
 			// 
 			// цвеToolStripMenuItem
@@ -471,21 +471,21 @@ namespace Project5 {
 			// 
 			// chart1
 			// 
-			chartArea4->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea4);
-			legend4->Enabled = false;
-			legend4->Name = L"Legend1";
-			this->chart1->Legends->Add(legend4);
+			chartArea1->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea1);
+			legend1->Enabled = false;
+			legend1->Name = L"Legend1";
+			this->chart1->Legends->Add(legend1);
 			this->chart1->Location = System::Drawing::Point(8, 3);
 			this->chart1->Name = L"chart1";
-			series4->ChartArea = L"ChartArea1";
-			series4->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
-			series4->IsVisibleInLegend = false;
-			series4->Legend = L"Legend1";
-			series4->Name = L"Series1";
-			series4->XValueType = System::Windows::Forms::DataVisualization::Charting::ChartValueType::Double;
-			series4->YValueType = System::Windows::Forms::DataVisualization::Charting::ChartValueType::Double;
-			this->chart1->Series->Add(series4);
+			series1->ChartArea = L"ChartArea1";
+			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
+			series1->IsVisibleInLegend = false;
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			series1->XValueType = System::Windows::Forms::DataVisualization::Charting::ChartValueType::Double;
+			series1->YValueType = System::Windows::Forms::DataVisualization::Charting::ChartValueType::Double;
+			this->chart1->Series->Add(series1);
 			this->chart1->Size = System::Drawing::Size(475, 302);
 			this->chart1->TabIndex = 0;
 			this->chart1->Text = L"chart1";
@@ -506,6 +506,7 @@ namespace Project5 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->ClientSize = System::Drawing::Size(499, 434);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->tabControl1);
